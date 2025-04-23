@@ -1,4 +1,5 @@
 import React from 'react'
+import Header from './Components/header.component';
 import { FaGithub } from 'react-icons/fa'; 
 import { MdEmail } from 'react-icons/md';
 import { FaLinkedin } from 'react-icons/fa';
@@ -13,39 +14,32 @@ class App extends React.Component {
   render(){
     return (
             <div className=" text-orange-950 font-sans">
-              <header className="fixed top-0 left-0 w-full px-[10%] py-5  flex justify-between items-center z-50  bg-yellow-100">
-                <a href="#home" className="text-[25px] font-bold text-[#bc6c25] font-sans">Portfolio.</a>
-                <nav className="flex space-x-8 text-[18px] font-semibold">
-                  <a href="#home" className="hover:text-[#dda15e]">Home</a>
-                  <a href="#about" className="hover:text-[#dda15e]">About</a>
-                  <a href="#edu-sect" className="hover:text-[#dda15e]">Education</a>
-                  <a href="#skills" className="hover:text-[#dda15e]">Skills</a>
-                  <a href="#projects" className="hover:text-[#dda15e]">Projects</a>
-                  <a href="#contact" className="hover:text-[#dda15e]">Contact</a>
-                </nav>
-              </header>
+              <Header />
 
-              <section id="home" className="flex justify-between items-center px-[10%] py-[10%]">
-                <div className="max-w-[600px]">
-                  <h1 className="text-[56px] font-bold leading-tight">Hey there! I am Dawood Ayaz</h1>
-                  <h3 className="text-[32px] font-bold text-[#ca6702] leading-tight">Frontend Developer</h3>
-                  <div className="flex space-x-4 mt-10">
-                    <a href="mailto:dawoodayaz18@gmail.com" className="px-6 py-3 bg-[#ca6702] text-orange-950 font-bold text-lg rounded-lg hover:bg-[#ca6702] hover:text-white border border-[#ca6702] transition-all">Contact me</a>
-                    <a href="http://linkedin.com/in/choudhry-dawood-ayaz-b6560b317" className="px-6 py-3 font-bold text-lg border border-[#ca6702] text-orange-950 rounded-lg hover:bg-[#ca6702] hover:text-white transition-all">My Linkedin</a>
+              <section id="home" className="flex justify-between items-center px-[5%] py-[5%] md:px-[10%] md:py-[10%]">
+                <div className="mt-28 mb-24 md:mt-16 max-w-32 md:max-w-[600px]">
+                  <h1 className="text-3xl md:text-[56px] font-bold leading-tight">Hey there! I am Dawood Ayaz</h1>
+                  <h3 className="text-2xl md:text-[32px] font-bold text-[#ca6702] leading-tight animate-pulse">Frontend Developer</h3>
+                  <div className="flex space-x-6 mt-10">
+                    <a href="mailto:dawoodayaz18@gmail.com" className="px-2 md:px-6 md:py-3 bg-[#ca6702] text-orange-950 font-bold md:text-lg rounded-lg hover:bg-[#ca6702] hover:text-white border border-[#ca6702] transition-all">Contact me</a>
+                    <a href="http://linkedin.com/in/choudhry-dawood-ayaz-b6560b317" className="px-2 md:px-6 md:py-3 font-bold md:text-lg border border-[#ca6702] text-orange-950 rounded-lg hover:bg-[#ca6702] hover:text-white transition-all">My Linkedin</a>
+                    <a className="cursor-pointer w-7 h-7" onClick={() => window.location.href = '//github.com/Dawoodayaz20'}> 
+                    <FaGithub className='ml-1 md:ml-12 animate-bounce size-8 md:size-12' />
+                    </a>
                   </div>
                 </div>
-                <img className="rounded-full w-[30%] h-[65%] object-cover clip-path-circle" src="CV pic.jpg" alt="Portfolio" />
+                <img className="rounded-full w-[47%] h-[100%] md:w-[30%] md:h-[65%] object-cover clip-path-circle" src="CV pic.jpg" alt="Portfolio" />
               </section>
 
               <section id="about" className="flex flex-col items-center gap-8 pb-12">
-                <h2 className="text-4xl text-center">About <span className="text-[#ca6702]">Me</span></h2>
+                <h2 className="text-3xl md:text-4xl text-center">About <span className="text-[#ca6702]">Me</span></h2>
                 <div className="relative w-[25rem] h-[25rem] flex justify-center items-center hover:border-black">
                   <img src="Portfolio Pic 0.jpg" className="w-[20rem] h-[20rem] object-cover rounded-full" alt="About" />
                   <span className="absolute top-0 left-0 w-full h-full rounded-full border-[0.2rem] border-[#ca6702] animate-spin-slow"></span>
                 </div>
                 <h3 className="text-2xl">Front-End Developer</h3>
                 <p className="text-[1.5rem] text-center mx-8 font-sans text-orange-950">
-                  I'm Dawood Ayaz, a passionate Front-end Web Developer with over 2 years of experience crafting sleek and responsive web applications. I specialize in turning ideas into clean, user-friendly interfaces using React, JavaScript, and Tailwind CSS.<br />
+                  I'm Dawood Ayaz, a passionate Front-end Web Developer with over 3 years of experience crafting sleek and responsive web applications. I specialize in turning ideas into clean, user-friendly interfaces using React, JavaScript, and Tailwind CSS.<br />
                   I'm also diving deep into the world of Agentic AI Engineering, exploring how intelligent systems can enhance the web.
                 </p>
               </section>
@@ -61,8 +55,8 @@ class App extends React.Component {
                 ].map((edu, idx) => (
                   <div key={idx} className="my-4 flex justify-center">
                     <div className="border-2 border-[#ca6702] rounded-2xl p-8 max-w-xl text-center hover:text-[#ca6702] transition-all">
-                      <h3 className="text-xl font-bold">{edu.title}</h3>
-                      <p>{edu.duration}</p>
+                      <h3 className="text-xl font-bold animate-bounce">{edu.title}</h3>
+                      <p className='animate-bounce'>{edu.duration}</p>
                     </div>
                   </div>
                 ))}
@@ -82,9 +76,9 @@ class App extends React.Component {
                 ].map((skill) => (
                     <div className="flex justify-center">
                       <div className="mb-6 w-3/5">
-                        <p className="text-lg font-semibold">{skill.Skill}</p>
-                        <div className=" bg-[#ca6702] h-4 rounded-full overflow-hidden justify-center">
-                          <div className={`bg-orange-950 h-full w-[${skill.percent}] hover:animate-pulse`}></div>
+                        <p className="text-lg font-semibold text-center">{skill.Skill}</p>
+                        <div className=" bg-orange-950 w-full h-4 rounded-full overflow-hidden">
+                          <div className="bg-[#ca6702] h-full animate-pulse" style={{ width: skill.percent }}></div>
                         </div>
                     </div>
                   </div>
@@ -117,7 +111,7 @@ class App extends React.Component {
                 <div className="flex items-center gap-6 border border-[#ca6702] p-6 mt-6 rounded-2xl"> 
                     <MdEmail size={28} />
                   <a className='cursor-pointer hover:text-[#ca6702]' onClick={() => window.location.href = 'mailto:dawoodayaz18@gmail.com'}>dawoodayaz18@gmail.com</a>
-                  <FaLinkedin size={28} />
+                    <FaLinkedin size={28} />
                   <a className='cursor-pointer hover:text-[#ca6702]' onClick={() => window.location.href="http://linkedin.com/in/choudhry-dawood-ayaz-b6560b317"}>LinkedIn</a>
                 </div>
               </section>
