@@ -1,6 +1,7 @@
 import React from 'react'
-import Header from './Components/header.component'
-import Home from './Components/home.component'
+import { FaGithub } from 'react-icons/fa'; 
+import { MdEmail } from 'react-icons/md';
+import { FaLinkedin } from 'react-icons/fa';
 import './App.css'
 
 class App extends React.Component {
@@ -12,12 +13,13 @@ class App extends React.Component {
   render(){
     return (
             <div className=" text-orange-950 font-sans">
-      <header className="fixed top-0 left-0 w-full px-[10%] py-5  flex justify-between items-center z-50">
+      <header className="fixed top-0 left-0 w-full px-[10%] py-5  flex justify-between items-center z-50  bg-yellow-100">
         <a href="#" className="text-[25px] font-bold text-[#bc6c25] font-sans">Portfolio.</a>
         <nav className="flex space-x-8 text-[18px] font-semibold">
           <a href="#home" className="hover:text-[#dda15e]">Home</a>
           <a href="#about" className="hover:text-[#dda15e]">About</a>
-          <a href="#edu-sect" className="hover:text-[#dda15e]">My Education</a>
+          <a href="#edu-sect" className="hover:text-[#dda15e]">Education</a>
+          <a href="#skills" className="hover:text-[#dda15e]">Skills</a>
           <a href="#projects" className="hover:text-[#dda15e]">Projects</a>
           <a href="#contact" className="hover:text-[#dda15e]">Contact</a>
         </nav>
@@ -66,7 +68,7 @@ class App extends React.Component {
         ))}
       </section>
         
-      <section id='Skills' className='mt-20 text-center justify-center'>
+      <section id='skills' className='mt-20 text-center justify-center'>
         <h1 className='text-4xl my-12'>My Skills</h1>
           <div className='justify-center text-center border-2 border-[#ca6702] rounded-lg mx-20'>
             <div className="flex justify-center">
@@ -157,19 +159,25 @@ class App extends React.Component {
       <section id="contact" className="flex flex-col items-center justify-center h-[70vh] text-center">
         <p className="text-[1.4rem]">Get in Touch<br />To collaborate or for any other service, I'm open to opportunities.</p>
         <h1 className="pt-8 text-[1.7rem]">Contact Me</h1>
-        <div className="flex items-center gap-6 border border-[#ca6702] p-6 mt-6 rounded-2xl">
-          <img src="Email-icon.png" alt="Email" className="w-6 h-6" />
-          <a href="mailto:dawoodayaz18@gmail.com">dawoodayaz18@gmail.com</a>
-          <img src="linkedin-icon.png" alt="LinkedIn" className="w-6 h-6" />
+        <div className="flex items-center gap-6 border border-[#ca6702] p-6 mt-6 rounded-2xl"> 
+            <MdEmail size={28} />
+          <a onClick={() => window.location.href = 'mailto:dawoodayaz18@gmail.com'}>dawoodayaz18@gmail.com</a>
+          <FaLinkedin size={28} />
           <a href="http://linkedin.com/in/choudhry-dawood-ayaz-b6560b317">LinkedIn</a>
         </div>
       </section>
 
-      <footer className="text-center py-8">
-        <div className="flex justify-center gap-6 mb-4">
-          <img src="gitub-icon.png" alt="GitHub" className="cursor-pointer w-6 h-6" onClick={() => window.location.href = '//github.com/Dawoodayaz20'} />
-          <img src="linkedin-icon.png" alt="LinkedIn" className="cursor-pointer w-6 h-6" onClick={() => window.location.href = '//linkedin.com/in/choudhry-dawood-ayaz-b6560b317'} />
-          <img src="Email-icon.png" alt="Email" className="cursor-pointer w-6 h-6" onClick={() => window.location.href = 'mailto:dawoodayaz18@gmail.com'} />
+      <footer className="text-center py-8 bg-yellow-100">
+        <div className="flex justify-center gap-16 mb-4">
+          <a className="cursor-pointer w-6 h-6" onClick={() => window.location.href = '//github.com/Dawoodayaz20'}> 
+            <FaGithub size={35} />
+          </a>
+          <a className="cursor-pointer w-6 h-6" onClick={() => window.location.href = '//linkedin.com/in/choudhry-dawood-ayaz-b6560b317'}> 
+            <FaLinkedin size={35} />
+          </a>
+          <a className="cursor-pointer w-6 h-6" onClick={() => window.location.href = 'mailto:dawoodayaz18@gmail.com'}> 
+            <MdEmail size={35} />
+          </a>
         </div>
         <p>&copy; 2024 Dawood Ayaz. All Rights Reserved.</p>
       </footer>
