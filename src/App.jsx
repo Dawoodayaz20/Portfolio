@@ -91,7 +91,7 @@ class App extends React.Component {
                 {[
                   { title: "Restaurant Website in React with Chatbot", link:"https://buns-and-burger-in-react.vercel.app/", Tech_Stack: "React, TailwindCSS, FastApi, Python, CrewAi"},
                   { title: "Restaurant Website", link:"https://dawoodayaz20.github.io/Buns_and_Burger/index.html", Tech_Stack: "HTML, JavaScript, CSS"},
-                  { title: "Restaurant Customer Support Ai Agent", link:"https://customersupportagent-production.up.railway.app/", Tech_Stack: "Python, FastApi, OpenAi Agents SDK"},
+                  { title: "Restaurant Customer Support Assistant", link:"https://customersupportagent-production.up.railway.app/", Tech_Stack: "Python, FastApi, OpenAi Agents SDK"},
                   { title: "Restaurant Customer Support Ai Agent", link:"https://customersupportagent-production.up.railway.app/", Tech_Stack: "React, TailwindCSS, FastApi, Python, CrewAi"},
                   { title: "Travel Planning Ai Agent", link:"https://huggingface.co/spaces/chdaud21/travel_agent", Tech_Stack: "Streamlit, Python, OpenAI Agents SDK"},
                   { title: "Blog Writing Ai Agent", link:"https://github.com/Dawoodayaz20/Streamlit_blog_writer.git", Tech_Stack: "Streamlit, Python, CrewAi"}
