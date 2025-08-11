@@ -89,10 +89,11 @@ class App extends React.Component {
               <section id="projects" className="text-center py-10">
                 <h1 className="text-4xl mb-8">My Projects</h1>
                 {[
-                  { title: "Restaurant Website", link:"https://dawoodayaz20.github.io/Buns_and_Burger/index.html", Tech_Stack: "HTML, JavaScript, CSS"},
                   { title: "Restaurant Website in React with Chatbot", link:"https://buns-and-burger-in-react.vercel.app/", Tech_Stack: "React, TailwindCSS, FastApi, Python, CrewAi"},
+                  { title: "Restaurant Website", link:"https://dawoodayaz20.github.io/Buns_and_Burger/index.html", Tech_Stack: "HTML, JavaScript, CSS"},
+                  { title: "Restaurant Customer Support Ai Agent", link:"https://customersupportagent-production.up.railway.app/", Tech_Stack: "Python, FastApi, OpenAi Agents SDK"},
                   { title: "Restaurant Customer Support Ai Agent", link:"https://customersupportagent-production.up.railway.app/", Tech_Stack: "React, TailwindCSS, FastApi, Python, CrewAi"},
-                  { title: "Travel Planning Ai Agent", link:"https://github.com/Dawoodayaz20/Travel_Planner.git", Tech_Stack: "Streamlit, Python, CrewAi"},
+                  { title: "Travel Planning Ai Agent", link:"https://huggingface.co/spaces/chdaud21/travel_agent", Tech_Stack: "Streamlit, Python, OpenAI Agents SDK"},
                   { title: "Blog Writing Ai Agent", link:"https://github.com/Dawoodayaz20/Streamlit_blog_writer.git", Tech_Stack: "Streamlit, Python, CrewAi"}
                 ].map((pro,lin) => (
                 <div key={lin} className='my-4 flex justify-center'>  
