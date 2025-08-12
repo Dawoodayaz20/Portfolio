@@ -88,6 +88,7 @@ class App extends React.Component {
 
               <section id="projects" className="text-center py-10">
                 <h1 className="text-4xl mb-8">My Projects</h1>
+                <div className="flex flex-wrap justify-center gap-8">
                 {[
                   { title: "Restaurant Website in React with Chatbot", link:"https://buns-and-burger-in-react.vercel.app/", Tech_Stack: "React, TailwindCSS, FastApi, Python, CrewAi"},
                   { title: "Restaurant Website", link:"https://dawoodayaz20.github.io/Buns_and_Burger/index.html", Tech_Stack: "HTML, JavaScript, CSS"},
@@ -96,14 +97,15 @@ class App extends React.Component {
                   { title: "Travel Planning Ai Agent", link:"https://huggingface.co/spaces/chdaud21/travel_agent", Tech_Stack: "Streamlit, Python, OpenAI Agents SDK"},
                   { title: "Blog Writing Ai Agent", link:"https://github.com/Dawoodayaz20/Streamlit_blog_writer.git", Tech_Stack: "Streamlit, Python, CrewAi"}
                 ].map((pro,lin) => (
-                <div key={lin} className='my-4 flex justify-center'>  
-                <div className="border-2 border-[#ca6702] rounded-2xl p-8 w-80 text-center hover:text-[#ca6702] transition-all">
-                  <p className="text-2xl my-4">{pro.title}</p>
-                  <a href={pro.link} className="px-6 py-2 bg-[#ca6702] text-orange-950 font-bold text-lg rounded-lg hover:bg-[#ca6702] hover:text-white border border-[#ca6702] transition-all">View Project</a>
-                  <p className='mt-8 text-yellow-900 text-base'><b>Tech Stack: </b>{pro.Tech_Stack}</p>
-                </div>
-                </div>
+                  // <div key={lin} className='my-4 flex justify-center'>
+                  <div key={lin} className="border-2 border-[#ca6702] rounded-2xl p-8 w-80 text-center hover:text-[#ca6702] transition-all">
+                    <p className="text-2xl my-4">{pro.title}</p>
+                    <a href={pro.link} className="px-6 py-2 bg-[#ca6702] text-orange-950 font-bold text-lg rounded-lg hover:bg-[#ca6702] hover:text-white border border-[#ca6702] transition-all">View Project</a>
+                    <p className='mt-8 text-yellow-900 text-base'><b>Tech Stack: </b>{pro.Tech_Stack}</p>
+                    {/*                   </div> */}
+                  </div>
               ))}
+              </div>
               </section>
 
               <section id="contact" className="flex flex-col items-center justify-center h-[70vh] text-center">
