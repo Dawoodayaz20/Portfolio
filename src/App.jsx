@@ -90,12 +90,15 @@ class App extends React.Component {
                 <h1 className="text-4xl mb-8">My Projects</h1>
                 <div className="flex flex-wrap justify-center gap-8">
                 {[
-                  { title: "Restaurant Website in React with Chatbot", link:"https://buns-and-burger-in-react.vercel.app/", Tech_Stack: "React, TailwindCSS, FastApi, Python, CrewAi"},
-                  { title: "Restaurant Website", link:"https://dawoodayaz20.github.io/Buns_and_Burger/index.html", Tech_Stack: "HTML, JavaScript, CSS"},
+                  { title: "Restaurant Website - Login/Sign Up + Chatbot", link:"https://bunsandburger.vercel.app/", Tech_Stack: "ReactJS, TailwindCSS, FastApi, Python, CrewAi, Appwrite"},
+                  { title: "Health Tracking Mobile App", link:"https://github.com/Dawoodayaz20/Health_tracking_app.git", Tech_Stack: "REACT Native, TypeScript, Expo, Python, FastAPI, OPENAI Agents SDK"},
+                  { title: "Restaurant Website in React with Chatbot", link:"https://buns-and-burger-in-react.vercel.app/", Tech_Stack: "ReactJS, TailwindCSS, FastApi, Python, CrewAi"},
+                  { title: "Restaurant Website", link:"https://dawoodayaz20.github.io/Buns_and_Burger/index.html", Tech_Stack: "HTML5, JavaScript, CSS"},
                   { title: "Restaurant Customer Support Assistant", link:"https://vercel-fastapiproject.vercel.app/docs", Tech_Stack: "Python, FastApi, OpenAi Agents SDK"},
                   { title: "Restaurant Customer Support Ai Agent", link:"https://customersupportagent-production.up.railway.app/", Tech_Stack: "React, TailwindCSS, FastApi, Python, CrewAi"},
                   { title: "Travel Planning Ai Agent", link:"https://huggingface.co/spaces/chdaud21/travel_agent", Tech_Stack: "Streamlit, Python, OpenAI Agents SDK"},
                   { title: "Blog Writing Ai Agent", link:"https://github.com/Dawoodayaz20/Streamlit_blog_writer.git", Tech_Stack: "Streamlit, Python, CrewAi"}
+                  
                 ].map((pro,lin) => (
                   // <div key={lin} className='my-4 flex justify-center'>
                   <div key={lin} className="border-2 border-[#ca6702] rounded-2xl p-8 w-80 text-center hover:text-[#ca6702] transition-all">
