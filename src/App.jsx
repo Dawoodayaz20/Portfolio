@@ -67,11 +67,13 @@ class App extends React.Component {
                 <div className='justify-center text-center border-2 border-[#ca6702] rounded-lg mx-20'>
                 {[
                   { Skill: "REACT JS", percent:"60%"},
+                  { Skill: "REACT Native", percent:"65%"},
+                  { Skill: "TypeScript", percent:"50%"},
                   { Skill: "Tailwind CSS", percent:"85%"},
-                  { Skill: "JavaScript", percent:"70%"},
+                  { Skill: "JavaScript", percent:"75%"},
                   { Skill: "HTML", percent:"95%"},
                   { Skill: "CSS", percent:"95%"},
-                  { Skill: "Python", percent:"70%"},
+                  { Skill: "Python", percent:"75%"},
                   { Skill: "FastApi", percent:"50%"},
                 ].map((skill) => (
                     <div className="flex justify-center">
@@ -88,6 +90,7 @@ class App extends React.Component {
 
               <section id="projects" className="text-center py-10">
                 <h1 className="text-4xl mb-8">My Projects</h1>
+                <h2 className="text-2xl mb-8">Web-Based Apps</h2>
                 <div className="flex flex-wrap justify-center gap-8">
                 {[
                   { title: "Restaurant Website - Login/Sign Up + Chatbot", link:"https://bunsandburger.vercel.app/", Tech_Stack: "ReactJS, TailwindCSS, FastApi, Python, CrewAi, Appwrite"},
@@ -98,14 +101,24 @@ class App extends React.Component {
                   { title: "Restaurant Customer Support Ai Agent", link:"https://customersupportagent-production.up.railway.app/", Tech_Stack: "React, TailwindCSS, FastApi, Python, CrewAi"},
                   { title: "Travel Planning Ai Agent", link:"https://huggingface.co/spaces/chdaud21/travel_agent", Tech_Stack: "Streamlit, Python, OpenAI Agents SDK"},
                   { title: "Blog Writing Ai Agent", link:"https://github.com/Dawoodayaz20/Streamlit_blog_writer.git", Tech_Stack: "Streamlit, Python, CrewAi"}
-                  
                 ].map((pro,lin) => (
-                  // <div key={lin} className='my-4 flex justify-center'>
                   <div key={lin} className="border-2 border-[#ca6702] rounded-2xl p-8 w-80 text-center hover:text-[#ca6702] transition-all">
                     <p className="text-2xl my-4">{pro.title}</p>
                     <a href={pro.link} className="px-6 py-2 bg-[#ca6702] text-orange-950 font-bold text-lg rounded-lg hover:bg-[#ca6702] hover:text-white border border-[#ca6702] transition-all">View Project</a>
                     <p className='mt-8 text-yellow-900 text-base'><b>Tech Stack: </b>{pro.Tech_Stack}</p>
-                    {/*                   </div> */}
+                  </div>
+              ))}
+              </div>
+                <h2>REACT-Native Mobile Apps</h2>
+                <div className="flex flex-wrap justify-center gap-8">
+                {[
+                  { title: "Medical Health Tracker App" , link:"https://github.com/Dawoodayaz20/Medical-Health-Tracker-App.git", Tech_Stack: "React Native, TypeScript, FastApi, Python, OpenAi Agents SDK, Appwrite", DownloadLink:"https://expo.dev/accounts/daud21/projects/MedicalHealthTrackerApp/builds/129e820d-3039-4b43-a0fe-de49b0797472"},
+                ].map((pro,lin) => (
+                  <div key={lin} className="border-2 border-[#ca6702] rounded-2xl p-8 w-80 text-center hover:text-[#ca6702] transition-all">
+                    <p className="text-2xl my-4">{pro.title}</p>
+                    <a href={pro.link} className="px-6 py-2 bg-[#ca6702] text-orange-950 font-bold text-lg rounded-lg hover:bg-[#ca6702] hover:text-white border border-[#ca6702] transition-all">View Project</a>
+                    <p className='mt-8 text-yellow-900 text-base'><b>Tech Stack: </b>{pro.Tech_Stack}</p>
+                    <p className='mt-8 text-yellow-900 text-base'><b>Download APK: </b>{pro.DownloadLink}</p>
                   </div>
               ))}
               </div>
