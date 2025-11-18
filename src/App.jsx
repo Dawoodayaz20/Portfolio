@@ -19,7 +19,7 @@ class App extends React.Component {
               <section id="home" className="flex justify-between items-center px-[5%] py-[5%] md:px-[10%] md:py-[10%]">
                 <div className="mt-28 mb-24 md:mt-16 max-w-32 md:max-w-[600px]">
                   <h1 className="text-3xl md:text-[56px] font-bold leading-tight">Hey there! I am Dawood Ayaz</h1>
-                  <h3 className="text-2xl md:text-[32px] font-bold text-[#ca6702] leading-tight animate-pulse">Frontend Developer</h3>
+                  <h3 className="text-2xl md:text-[32px] font-bold text-[#ca6702] leading-tight animate-pulse">REACT.JS Developer / REACT Native App Developer</h3>
                   <div className="flex space-x-6 mt-10">
                     <a href="mailto:dawoodayaz18@gmail.com" className="px-2 md:px-6 md:py-3 bg-[#ca6702] text-orange-950 font-bold md:text-lg rounded-lg hover:bg-[#ca6702] hover:text-white border border-[#ca6702] transition-all">Contact me</a>
                     <a href="http://linkedin.com/in/choudhry-dawood-ayaz-b6560b317" className="px-2 md:px-6 md:py-3 font-bold md:text-lg border border-[#ca6702] text-orange-950 rounded-lg hover:bg-[#ca6702] hover:text-white transition-all">My Linkedin</a>
