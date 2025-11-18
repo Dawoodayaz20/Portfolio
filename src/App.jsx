@@ -117,8 +117,8 @@ class App extends React.Component {
                   <div key={lin} className="border-2 border-[#ca6702] rounded-2xl p-8 w-80 text-center hover:text-[#ca6702] transition-all">
                     <p className="text-2xl my-4">{pro.title}</p>
                     <a href={pro.link} className="px-6 py-2 bg-[#ca6702] text-orange-950 font-bold text-lg rounded-lg hover:bg-[#ca6702] hover:text-white border border-[#ca6702] transition-all">View Project</a>
-                    <p className='mt-8 text-yellow-900 text-base'><b>Tech Stack: </b>{pro.Tech_Stack}</p>
-                    <a href={pro.DownloadLink} className="px-6 mt-5 py-2 bg-[#ca6702] text-orange-950 font-bold text-lg rounded-lg hover:bg-[#ca6702] hover:text-white border border-[#ca6702] transition-all">Download APK</a>
+                    <p className='mt-8 mb-8 text-yellow-900 text-base'><b>Tech Stack: </b>{pro.Tech_Stack}</p>
+                    <a href={pro.DownloadLink} className="px-6 py-2 bg-[#ca6702] text-orange-950 font-bold text-lg rounded-lg hover:bg-[#ca6702] hover:text-white border border-[#ca6702] transition-all">Download APK</a>
                   </div>
               ))}
               </div>
