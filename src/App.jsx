@@ -109,7 +109,7 @@ class App extends React.Component {
                   </div>
               ))}
               </div>
-                <h2>REACT-Native Mobile Apps</h2>
+                <h2 className="text-2xl mb-8">REACT-Native Mobile Apps</h2>
                 <div className="flex flex-wrap justify-center gap-8">
                 {[
                   { title: "Medical Health Tracker App" , link:"https://github.com/Dawoodayaz20/Medical-Health-Tracker-App.git", Tech_Stack: "React Native, TypeScript, FastApi, Python, OpenAi Agents SDK, Appwrite", DownloadLink:"https://expo.dev/accounts/daud21/projects/MedicalHealthTrackerApp/builds/129e820d-3039-4b43-a0fe-de49b0797472"},
@@ -118,7 +118,7 @@ class App extends React.Component {
                     <p className="text-2xl my-4">{pro.title}</p>
                     <a href={pro.link} className="px-6 py-2 bg-[#ca6702] text-orange-950 font-bold text-lg rounded-lg hover:bg-[#ca6702] hover:text-white border border-[#ca6702] transition-all">View Project</a>
                     <p className='mt-8 text-yellow-900 text-base'><b>Tech Stack: </b>{pro.Tech_Stack}</p>
-                    <p className='mt-8 text-yellow-900 text-base'><b>Download APK: </b>{pro.DownloadLink}</p>
+                    <a href={pro.DownloadLink} className="px-6 py-2 bg-[#ca6702] text-orange-950 font-bold text-lg rounded-lg hover:bg-[#ca6702] hover:text-white border border-[#ca6702] transition-all">Download APK</a>
                   </div>
               ))}
               </div>
