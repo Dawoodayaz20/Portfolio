@@ -143,10 +143,10 @@ class App extends React.Component {
 
               <footer className="text-center py-8 bg-yellow-100">
                 <div className="flex justify-center gap-16 mb-4">
-                  <a className="cursor-pointer w-6 h-6" onClick={() => window.location.href = 'www.github.com/Dawoodayaz20'}> 
+                  <a className="cursor-pointer w-6 h-6" onClick={() => window.location.href = 'http://www.github.com/Dawoodayaz20'}> 
                     <FaGithub size={35} />
                   </a>
-                  <a className="cursor-pointer w-6 h-6" onClick={() => window.location.href = 'www.linkedin.com/in/dawood-ayaz-b6560b317'}> 
+                  <a className="cursor-pointer w-6 h-6" onClick={() => window.location.href = 'http://www.linkedin.com/in/dawood-ayaz-b6560b317'}> 
                     <FaLinkedin size={35} />
                   </a>
                   <a className="cursor-pointer w-6 h-6" onClick={() => window.location.href = 'mailto:dawoodayaz18@gmail.com'}> 
