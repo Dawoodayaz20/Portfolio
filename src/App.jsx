@@ -137,7 +137,7 @@ class App extends React.Component {
                     <MdEmail size={28} />
                   <a className='cursor-pointer hover:text-[#ca6702]' onClick={() => window.location.href = 'mailto:dawoodayaz18@gmail.com'}>dawoodayaz18@gmail.com</a>
                     <FaLinkedin size={28} />
-                  <a className='cursor-pointer hover:text-[#ca6702]' onClick={() => window.location.href="http://linkedin.com/in/choudhry-dawood-ayaz-b6560b317"}>LinkedIn</a>
+                  <a className='cursor-pointer hover:text-[#ca6702]' onClick={() => window.location.href="http://www.linkedin.com/in/dawood-ayaz-b6560b317"}>LinkedIn</a>
                 </div>
               </section>
 
